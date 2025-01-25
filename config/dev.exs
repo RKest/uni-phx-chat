@@ -2,7 +2,8 @@ import Config
 
 # Configure your database
 config :uni_elixir, UniElixir.Repo,
-  username: "postgres",
+  username: "max",
+  socket_dir: System.get_env("PGHOST"),
   password: "postgres",
   hostname: "localhost",
   database: "uni_elixir_dev",
