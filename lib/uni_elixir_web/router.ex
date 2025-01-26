@@ -74,7 +74,7 @@ defmodule UniElixirWeb.Router do
       on_mount: [{UniElixirWeb.UserAuth, :ensure_authenticated}] do
       # layout: {UniElixirWeb.Layouts, :rooms} do
       live "/rooms", Chat.Root
-      live "/rooms/:id", Chat.Root
+      live "/room/:id", Chat.Room
     end
   end
 

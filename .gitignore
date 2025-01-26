@@ -39,3 +39,5 @@ npm-debug.log
 .nix-hex
 .nix-mix
 postgres/data
+postgres
+postgres
