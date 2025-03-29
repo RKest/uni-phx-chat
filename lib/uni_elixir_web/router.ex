@@ -20,7 +20,7 @@ defmodule UniElixirWeb.Router do
   scope "/", UniElixirWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    # get "/", PageController, :home
   end
 
   # Other scopes may use custom stacks.
@@ -73,7 +73,7 @@ defmodule UniElixirWeb.Router do
     live_session :rooms,
       on_mount: [{UniElixirWeb.UserAuth, :ensure_authenticated}] do
       # layout: {UniElixirWeb.Layouts, :rooms} do
-      live "/rooms", Chat.Root
+      live "/", Chat.Root
       live "/room/:id", Chat.Room
     end
   end
